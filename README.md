@@ -2,9 +2,13 @@
 Welcome to the Periodic Process Logger project! This Python-based script logs information about the processes running on your machine at regular intervals. It generates a log file, and if there's an internet connection, it sends the log via email as an attachment.
 
 🚀 Features
+
 📝 Log Running Processes: Captures PID, process name, username, and memory usage (VMS).
+
 📂 Save Logs: Saves logs in a timestamped file within a specified directory.
+
 📧 Email Logs: Automatically sends the log file as an email attachment when connected to the internet.
+
 ⏱️ Periodic Execution: Allows the script to run at user-defined intervals.
 
 📋 Prerequisites
@@ -28,8 +32,11 @@ python periodic_process_logger.py -u
 
 🔧 How It Works
 1.The script checks for running processes using the psutil library and logs relevant information such as process ID (PID), process name, username, and memory usage.
+
 2.The log is saved in a directory (LogFiles by default). Each log file is named with a timestamp.
+
 3.The script checks if there is an active internet connection. If so, it emails the log file to the specified email addresses.
+
 4.The email contains the log file as an attachment and a message with the log generation timestamp.
 
 ⚙️ Configuration
@@ -48,6 +55,7 @@ Process Logger : Mon Feb 18 14:20:30 2025
 
 Error Handling
 ❌ No Internet Connection: The script won’t send the email if there’s no internet connection.
+
 ⚠️ Invalid Input: If you provide an invalid time interval, the script will display an error message.
 
 Author
